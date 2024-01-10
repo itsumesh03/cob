@@ -1,0 +1,16 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-auto-rows: minmax(100px, auto); /* Minimum row height of 100px, auto-expanding */
+  grid-gap: 10px; /* Gap between grid items */
+  justify-items: center; /* Center items horizontally within their grid cells */
+  align-items: center; /* Center items vertically within their grid cells */
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

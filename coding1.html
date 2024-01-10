@@ -1,0 +1,115 @@
+{% extends "backend/base.html" %}
+{% load static %}
+{% block tle %}
+<title>Home| Clash of bugs</title>
+{% endblock %}ti
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static '/footer.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/coding.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/navbar.css' %}">
+{% endblock %}
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+{% include "backend/nav.html" %}
+
+
+<div class="code">
+  <div class="ques">
+  <div>
+      <div class="container">
+          <div class="text-dash">
+              Problem
+          </div>
+      <div class="line-dash"></div>
+       </div>
+  <div class="text-coding">
+      Task
+Given an integer, , and  space-separated integers as input, create a tuple, , of those  integers. Then compute and print the result of .
+
+Note: hash() is one of the functions in the <code> __builtins__ </code>module, so it need not be imported.
+
+Input Format
+
+The first line contains an integer, , denoting the number of elements in the tuple.
+The second line contains  space-separated integers describing the elements in tuple .
+
+Output Format
+
+Print the result of .
+  </div>
+      </div>
+
+      <div class="container">
+      <div class="text-dash">
+          Input
+      </div>
+      <div class="line-dash"></div>
+  </div>
+  <div class="text-coding">
+      The first line contains an integer, , denoting the number of elements in the tuple.
+The second line contains  space-separated integers describing the elements in tuple .
+
+      <pre class="err">
+          <span></span>
+          <span>2</span>
+          <span>2 4 </span>
+      </pre>
+  </div>
+
+  <div class="container">
+      <div class="text-dash">
+          Output
+      </div>
+      <div class="line-dash"></div>
+  </div>
+  <div class="text-coding">
+      Print the result of .
+      <pre class="err">
+          <span></span>
+          <span>1</span>
+      </pre>
+
+  </div>
+  </div>
+  <div class="kernal">
+      <div class="selector">
+          <div class="text-lan">
+              Select a language:
+          </div>
+          <div>
+          <select id="codingLanguages">
+              <option value="ruby">Ruby</option>
+              <option value="C++">C++</option>
+              <option value="C">C</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
+          
+          </select>
+
+      </div>
+      </div>
+          <div id="editor">
+          </div>
+          <div>
+              <form action="">
+                  <div>
+                      <div class="container">
+                          <div class="text-dash">
+                              Custom input
+                          </div>
+                      <div class="line-dash"></div>
+                       </div>
+                  <div class="custom-input-container">
+                  <textarea name="" id="custom-input" cols="30" rows="6" placeholder="Custom input"></textarea>
+                  <div class="run-button">
+                    <button type="" class="run-btn">Run Code</button>
+                    </div>
+                  </div>
+              </form>
+          <script src="coding.js">        
+          </script>
+
+  </div>
+</div>
+</div>
+{% endblock %}

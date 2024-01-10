@@ -1,0 +1,49 @@
+.event-card{
+    background-color: #0e1726;
+    width: 95%;
+    margin-top: 2%;
+    padding: 2px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border: solid 0px #707070;
+    /* box-shadow: 7px 10px 10px #6191C1; */
+    
+}
+
+.event-card-container{
+    overflow: auto;
+}
+
+.event-card-link{
+    text-decoration: none;
+}
+
+.event-card-link:visited{
+    color: #bbbbbb;
+}
+
+.event-name{
+    font-size: 20px;
+    color: #bbbbbb;
+}
+
+.event-des{
+    font-size: 15px;
+    color: #bbbbbb
+}
+.event-card-left{
+    margin: 2%;
+}
+
+img.event-image{
+    width: 150px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1080px){
+    .event-card{
+        width: 95%;
+    }
+}

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+#editor {
+    height: 80%;
+    width: 100%;
+    font-size: 20px;
+    overflow: auto;
+    background-color: bisque;
+}

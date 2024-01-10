@@ -1,0 +1,78 @@
+{% extends "backend/base.html" %}
+{% load static %}
+{% block tle %}
+<title>Home| Clash of bugs</title>
+{% endblock %}ti
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static '/footer.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/matching.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/navbar.css' %}">
+{% endblock %}
+{% block content %}
+{% include "backend/nav.html" %}
+<div class="matching-card">
+
+    <div class="upper-card">
+    <img src="brownz medal.svg" alt="" class="medal">
+    <div class="level-data">
+        <div class="league-name level-text">
+            Brownz 1
+        </div>
+        <div class="progress-loader">
+            <div class="progress"></div>
+        </div>
+        <div class="percentage">
+            150/300 Trophies
+        </div>
+        <div class="level-no level-text">
+            Level 1
+        </div>
+        <div class="progress-loader">
+            <div class="progress"></div>
+        </div>
+        <div class="percentage">
+           50/100 XP
+        </div>
+    </div>
+    </div>
+    <h2>Previous stats</h2>
+<center>
+    <h1>
+        we are not storing data there no previous stats .... will come after beta testing...
+    </h1>
+</center>
+
+<center>
+<a href="" class="match-up">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+Find Match
+</a>
+</center>
+</div>
+
+<footer class="footer">
+    <div class="left-section">
+        <img id = logo-foot src="clash of bugs s _white name9.png" alt="">
+
+    <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tournaments</a></li>
+            <li><a href="#">Battles</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">feedback</a></li>
+        </ul>
+        <div class="copyright"><p> © by Trivix labs pvt ltd</p></div>
+    </div>
+    </div>
+    <div class="right-section">
+        <p>Contact Information:</p>
+        <p>Email: example@example.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        
+    </div>
+</footer>

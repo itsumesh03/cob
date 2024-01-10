@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coding.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.min.css" integrity="sha512-XjO5XYWl8u7tYF3CItEHgoWh8rtQmDeSzPJq4+4PIrbak7TiqeKbWv/4ZwHZ1HAf5dIWHXoguA/jobn2psKZ7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+
+
+  <script>var require = { paths: { 'vs' : 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs' }};
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/loader.min.js" integrity="sha512-gWqaPfGsZiCkYB6e5mNN4SMRpEvLGItLBqgOAoyLSKtDxWS2O1YPcOeGTy8d8l00gqc8rVue9ae/ncZqhmfj4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.nls.min.js" integrity="sha512-4XY3/LL6Plkq2tXMnatY+se07ZhwFMkZehD5Z68HrKoSL3BTyLDjwFomhUWixKu8VUw6jWe/8RXT1WtH95lLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.min.js" integrity="sha512-CK3czr9gLG2z/ygdSM+gNenkN9AShfpW4gMjVyY06VgFHLoc4OCoO92Z8UkcBwVX0ufoYbJw3IVs1mHfXQeI3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script> -->
+    <nav class="navbar">
+        <div class="logo"><img width="100px" id = logo src="clash of bugs s _white name9.png" alt="">
+        </div>
+        <ul class="nav-list">
+          <li><a href="./tournaments.html"><button>Tournaments</button></a></li>
+          <li><a href=""><button href="#">Learn</button></a></li>
+          <li><a href=""><button href="#">Battles</button></a></li>
+        </ul>
+        
+        <div class="login-btns-nav">
+          <a href="#" class="login-btn-glow">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Login
+          </a>
+          <a href="#" class="login-btn-glow">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Sign up
+          </a>
+        </div>
+        <div class="menu-toggle">
+        <input id="checkbox" type="checkbox" class="menu-btn">
+        <label class="toggle" for="checkbox">
+      
+          <div id="bar1" class="bars"></div>
+          <div id="bar2" class="bars"></div>
+          <div id="bar3" class="bars"></div>
+        
+        </label>
+        <div class="overlay-menu">
+            <div class="login-btns-menu">
+              <a href="#" class="login-btn-glow">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+              </a>
+              <a href="#" class="login-btn-glow">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Sign up
+              </a>
+            </div>
+          <div class="buttons-menu">
+            <a href="">
+            <button>
+              Tournaments
+            </button>
+            </a>
+            <a href="">
+            <button>
+              Learn
+            </button>
+            </a>
+            <a href="">
+            <button>
+              Battles
+            </button>
+            </a>
+          </div>
+      </div>
+    
+        </div>
+      </nav>
+    
+    <div class="code">
+        <div class="ques">
+        <div>
+            <div class="container">
+                <div class="text-dash">
+                    Problem
+                </div>
+            <div class="line-dash"></div>
+             </div>
+        <div class="text-coding">
+            Task
+Given an integer, , and  space-separated integers as input, create a tuple, , of those  integers. Then compute and print the result of .
+
+Note: hash() is one of the functions in the <code> __builtins__ </code>module, so it need not be imported.
+
+Input Format
+
+The first line contains an integer, , denoting the number of elements in the tuple.
+The second line contains  space-separated integers describing the elements in tuple .
+
+Output Format
+
+Print the result of .
+        </div>
+            </div>
+
+            <div class="container">
+            <div class="text-dash">
+                Input
+            </div>
+            <div class="line-dash"></div>
+        </div>
+        <div class="text-coding">
+            The first line contains an integer, , denoting the number of elements in the tuple.
+The second line contains  space-separated integers describing the elements in tuple .
+
+            <pre class="err">
+                <span></span>
+                <span>2</span>
+                <span>2 4 </span>
+            </pre>
+        </div>
+
+        <div class="container">
+            <div class="text-dash">
+                Output
+            </div>
+            <div class="line-dash"></div>
+        </div>
+        <div class="text-coding">
+            Print the result of .
+            <pre class="err">
+                <span></span>
+                <span>1</span>
+            </pre>
+
+        </div>
+        </div>
+        <div class="kernal">
+            <div class="selector">
+                <div class="text-lan">
+                    Select a language:
+                </div>
+                <div>
+                <select id="codingLanguages">
+                    <option value="ruby">Ruby</option>
+                    <option value="C++">C++</option>
+                    <option value="C">C</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                
+                </select>
+
+            </div>
+            </div>
+                <div id="editor">
+      
+                  <pre id='CodeBlock' data-lang='csharp'>
+                    using system;
+                    namespace VSCodeEditor
+                    {
+                        class Program
+                        {
+                            static void Main(string[] args)
+                            {
+                                Console.WriteLine("Hello World!");
+            
+                            }
+                        }
+                    }        
+                </pre>
+                </div>
+                <div>
+                
+                    <form action="">
+                        <div>
+                          <div class="run-button">
+                            <button type="" class="run-btn">Run Code</button>
+                            
+                              <button type="" class="sub-btn">Submit Code</button>
+                              </div>
+                                  <div class="container">
+                                   
+                                <div class="text-dash">
+                                    Custom input
+                                </div>
+                            <div class="line-dash"></div>
+                             </div>
+                        <div class="custom-input-container">
+                        <textarea name="" id="custom-input" cols="30" rows="6" placeholder="Custom input"></textarea>
+                        <div class="run-button">
+                          <button type="" class="run-btn">Run Code</button>
+                          </div>
+                        </div>
+                    </form>
+                <script src="coding.js">
+                    
+                </script>
+                <script src="navbar.js"></script>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+      var codeContent = $.trim($('#CodeBlock').text());
+      $('#CodeBlock').html('');
+  
+        var editorCodeBlock = monaco.editor.create(document.getElementById('CodeBlock'),{
+              value: codeContent,
+              language : "csharp",
+              theme: "vs-dark",
+              lineNumbers: "on" ,
+              glyphMargin: false,
+              vertical: 'auto',
+              horizontal: 'auto ' ,
+              verticalScrollbarSize: 10,
+              horizontalScrollbarSize: 10,
+              scrollBeyondLastLine: false,
+              readOnly: false,
+              automaticLayout:  true,
+              minimap: {
+                  enabled: true
+              },
+              lineHeight:20,
+          });
+          $ ("#CodeBlock").height((editorCodeBlock.getModel() .getLineCount()*30)+22);
+  
+  
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="test1" class="test-case">
+  <div class="Input">
+      Input
+  </div>
+  <pre class="err-copy">
+      <span></span>
+      <span>2</span>
+      <span>2 4 </span>
+  </pre>
+  
+</div>
+<div id="test2" class="test-case"  style="display: none;">
+  <div class="Input">
+      Input
+  </div>
+  <pre class="err-copy">
+      <span></span>
+      <span>2</span>
+      <span>2 4 </span>
+  </pre>
+</div>
+<div id="test3" class="test-case"   style="display: none;">
+<div class="Input">
+      Input
+  </div>
+  <pre class="err-copy">
+      <span></span>
+      <span>2</span>
+      <span>2 4 </span>
+  </pre></div>

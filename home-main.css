@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Sucrose Bold Two';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+    }
+@font-face {
+    font-family: 'IM Fell French Canon Pro';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/im-fell-french-canon-pro.woff2') format('woff2');
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.desktop {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .clash-of-bugs-s-wrapper {
+  background: linear-gradient(180deg, rgb(20, 30, 48) 0%, rgb(36, 59, 85) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.desktop .clash-of-bugs-s {
+  height: 426px;
+  left: 369px;
+  position: absolute;
+  top: 281px;
+  width: 701px;
+}
+
+header { 
+  background: url("./bc-pic-transformed.png") no-repeat;
+  padding-top: 60.93333333%;
+  margin-top: 5% ;
+  background-size: cover;
+  font-family: 'Sucrose Bold Two';
+
+}
+header img {
+  position: absolute;
+  top: 21%;
+  right: 0;
+  width: 100%;
+}
+header h1 { 
+  position: fixed;
+  top: 19rem;
+  margin-left: 20%;
+  font-size: 6vw;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+}
+main p{
+    text-align: center;
+}
+.explore{
+    text-align: center;
+    width: 100%;
+}
+
+main { 
+  background: linear-gradient(#141e30, #243b55);
+  position: relative;
+  color: #BBBBBB;
+  /* border: 1px solid #fff; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+  padding: 2rem 25%;
+  line-height: 1.6;
+}
+@media all and (max-width: 400px) {
+  main { padding: 2rem; }
+
+
+}
+
+@media screen and (max-width:1080px) {
+
+    header img{
+        top: 15%;
+    }
+    header h1{
+        top: 13rem;
+    }
+}

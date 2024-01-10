@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.cropper-container {
+    position: relative;
+    margin: 20px auto;
+    width: 720px;
+    height: 720px;
+    overflow: hidden;
+}
+
+.cropper-preview {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+img#croppedImage {
+    max-width: none;
+}
+
+input#cropSlider {
+    width: 100%;
+}
+
+button#cropButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,151 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monaco</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.min.css" integrity="sha512-XjO5XYWl8u7tYF3CItEHgoWh8rtQmDeSzPJq4+4PIrbak7TiqeKbWv/4ZwHZ1HAf5dIWHXoguA/jobn2psKZ7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script>var require = { paths: { 'vs' : 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs' }};
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/loader.min.js" integrity="sha512-gWqaPfGsZiCkYB6e5mNN4SMRpEvLGItLBqgOAoyLSKtDxWS2O1YPcOeGTy8d8l00gqc8rVue9ae/ncZqhmfj4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.nls.min.js" integrity="sha512-4XY3/LL6Plkq2tXMnatY+se07ZhwFMkZehD5Z68HrKoSL3BTyLDjwFomhUWixKu8VUw6jWe/8RXT1WtH95lLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.min.js" integrity="sha512-CK3czr9gLG2z/ygdSM+gNenkN9AShfpW4gMjVyY06VgFHLoc4OCoO92Z8UkcBwVX0ufoYbJw3IVs1mHfXQeI3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <h1>My blog</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa eum suscipit corporis voluptate eaque in porro ipsa repellat aliquid.</p>
+    <pre id='CodeBlock' data-lang='csharp'>
+        using system;
+        namespace VSCodeEditor
+        {
+            class Program
+            {
+                static void Main(string[] args)
+                {
+                    Console.WriteLine("Hello World!");
+
+                }
+            }
+        }        
+    </pre>
+    <p>wasn't that cool</p>
+
+
+<script>
+    var codeContent = $.trim($('#CodeBlock').text());
+    $('#CodeBlock').html('');
+
+      var editorCodeBlock = monaco.editor.create(document.getElementById('CodeBlock'),{
+            value: codeContent,
+            language : "csharp",
+            theme: "vs-dark",
+            lineNumbers: "on" ,
+            glyphMargin: false,
+            vertical: 'auto',
+            horizontal: 'auto ' ,
+            verticalScrollbarSize: 10,
+            horizontalScrollbarSize: 10,
+            scrollBeyondLastLine: false,
+            readOnly: false,
+            automaticLayout:  true,
+            minimap: {
+                enabled: true
+            },
+            lineHeight:20,
+        });
+        $ ("#CodeBlock").height((editorCodeBlock.getModel() .getLineCount()*19)+10);
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs/editor/editor.main.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="coding.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs/loader.min.js"></script>
+
+    <div id="editor"></div>
+
+
+    <script>
+
+            require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs' }});
+
+            require(["vs/editor/editor.main"], function() {
+              const editor = monaco.editor.create(document.getElementById('editor'), {
+                value: ['<!DOCTYPE html>',
+                         '<html>',
+                         '  <body>',
+                         '    <h1>Hello World!</h1>', 
+                         '  </body>',
+                         '</html>'].join('\n'),
+                language: 'html'
+              });
+            }); 
+
+            const editor = monaco.editor.create(..., {
+            theme: 'vs-dark' 
+            });
+    </script>
+
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    
+    <link rel="stylesheet" href="path/to/monaco-editor/min/vs/editor/editor.main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs/editor/editor.main.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="coding.css">
+</head>
+<body>
+
+    <div id="editor"></div>
+
+    <script src="path/to/monaco-editor/min/vs/loader.js"></script>
+    <script>
+        require.config({ paths: { 'vs': 'path/to/monaco-editor/min/vs' }});
+        require(['vs/editor/editor.main'], function() {
+           
+            var editor = monaco.editor.create(document.getElementById('your-editor-container'), {
+                value: 'Hello, Monaco!',
+                language: 'javascript'
+            });
+        });
+    </script>
+</body>
+</html> -->
+

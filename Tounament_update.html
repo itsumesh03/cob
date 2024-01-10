@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="coding_update.css"> -->
+    <link rel="stylesheet" href="tournament_update.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="nav">
+                <div class="overlap-group">
+                  <div class="menu"></div>
+                  <img class="logo" src="clash of bugs s _white name9.png" alt="">
+                </div>
+                
+            </div>
+            <div class="main">
+                <div class="top">
+                    <div class="rank">
+                    </div>
+                    <div class="profile">
+                        <img src="profile.png" alt="">
+                    </div>
+                </div>
+                <div class="radio-inputs">
+                  <label class="radio">
+                    <input type="radio" name="radio" checked onclick="showMain('main1', true, false, false)">
+                    <span class="name">Ongoing Clash</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="radio" onclick="showMain('main2', false, true, false)">
+                    <span class="name">Upcoming Clash</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="radio" onclick="showMain('main3', false, false,true)">
+                    <span class="name">Participated</span>
+                  </label>
+                  </div>
+            <div id="main1" class="main1">
+                
+                  <div class="overlap-group1">
+                    <div class="rectangle"></div>
+                    <div class="rectangle"></div>
+                    <div class="rectangle"></div>
+                </div>
+                  <div class="overlap">
+                    <div class="rectangle-2">
+                    </div>
+                </div>
+                
+              </div>
+            <div id="main2"  class="main2" >
+                
+                <div class="overlap-group1">
+                  <div class="rectangle"></div>
+                  <div class="rectangle"></div>
+                  <!-- <div class="rectangle"></div> -->
+              </div>
+                <div class="overlap">
+                  <div class="rectangle-2">
+                  </div>
+              </div>
+              
+            </div>
+            <div id="main3" class="main3" >
+                
+              <div class="overlap-group1">
+                <div class="rectangle"></div>
+                <!-- <div class="rectangle"></div>
+                <div class="rectangle"></div> -->
+            </div>
+              <div class="overlap">
+                <div class="rectangle-2">
+                </div>
+            </div>
+            
+            </div>
+
+            </div>
+        </div>
+    <script> 
+ 
+  function showMain(mainToShow, showMain1, showMain2, showMain3) {
+      const main1 = document.querySelector('.main1');
+      const main2 = document.querySelector('.main2');
+      const main3 = document.querySelector('.main3');
+
+      main1.style.display = showMain1 ? 'block' : 'none';
+      main2.style.display = showMain2 ? 'block' : 'none';
+      main3.style.display = showMain3 ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,221 @@
+@import "compass/css3";
+
+/* Font imports */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Color vars */
+:root {
+  --white: #0e1726;
+  --grey: #ccc;
+  --dark_grey: #555;
+  --blue: #4f6fad;
+  --pink: #ee9cb4;
+}
+
+/* Mixins */
+@function pxtoem($target, $context) {
+  @return ($target / $context) + 0em;
+}
+
+/* Body styles */
+body {
+  background-color: lighten(var(--grey), 10%);
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+/* Box-sizing for common elements */
+div,
+textarea,
+input {
+  box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+  max-width: 510px;
+  min-width: 324px;
+  margin: 50px auto 0px;
+  background-color: var(--white);
+  border: 1px solid lighten(var(--grey), 1%);
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 5px;
+  /* border-bottom: 3px solid var(--grey); */
+}
+
+/* Row styles */
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+
+.row.header {
+  padding: 1.5em 2.5em;
+  /* border-bottom: 1px solid var(--grey); */
+  background-color: #000813;
+  border-radius: 5px 5px 0px 0px;
+  
+  /* background: url("image9.jpg") left -80px; */
+  color: var(--white);
+}
+
+.row.body {
+  padding: 0.5em 2.5em 1em;
+}
+
+/* Pull-right class */
+.pull-right {
+  float: right;
+}
+
+/* Heading styles */
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #bbbbbb;
+  font-size: calc(450px / 16);
+  border-bottom: 1px solid hsla(100%, 100%, 100%, 0.3);
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.4em 0;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: calc(20px / 16);
+  margin: 1em 0 0.4em 0;
+}
+
+/* Button styles */
+.btn {
+  font-size: calc(15px);
+  display: inline-block;
+  padding: 0.74em 1em;
+  margin: 1.5em 0 0;
+  color: var(--white);
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  background-color: var(--dark_grey);
+}
+
+/* Specific button styles */
+.btn.btn-submit {
+    border: solid 0p #707070;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    background: linear-gradient(#617496, #243b55);
+}
+
+/* Form styles */
+form {
+  max-width: 100%;
+  display: block;
+}
+
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+form ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+
+form ul li:last-child {
+  margin: 0;
+}
+
+form ul li p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+form ul li p.right {
+  float: right;
+}
+
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: var(--blue);
+  background-image: linear-gradient(to right, var(--pink), var(--blue));
+}
+
+form ul li .req {
+  color: var(--pink);
+}
+
+form label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: var(--blue);
+  font-size: calc(16px);
+}
+
+form input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid var(--grey);
+  padding: 16px 100px;
+  color: var(--dark_grey);
+  font-size: calc(16px / 16);
+}
+
+form textarea {
+  border: 1px solid var(--grey);
+  padding: 6px 10px;
+  width: 100%;
+  color: var(--dark_grey);
+}
+
+form small {
+  color: var(--blue);
+  margin: 0 0 0 0.5em;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1080px) {
+  .pull-right {
+    float: none;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    clear: both;
+  }
+
+  li,
+  p {
+    width: 100%;
+  }
+
+  input.btn {
+    margin: 1.5em 0 0.5em;
+  }
+
+  h1 {
+    font-size: calc(36px);
+  }
+
+  h3 {
+    font-size: calc(18px);
+  }
+
+  li small {
+    display: none;
+  }
+}

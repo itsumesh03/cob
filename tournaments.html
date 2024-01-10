@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="tournament.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <!-- loged in navbar  -->
+    <nav class="navbar">
+        <div class="logo"><img width="100px" id = logo src="clash of bugs s _white name9.png" alt="">
+        </div>
+        <ul class="nav-list">
+            <li><a href="tournaments.html"><button>Tournaments</button></a></li>
+            <li><a href="selection.html"><button href="#">Learn</button></a></li>
+            <li><a href="matching.html"><button href="#">Battles</button></a></li>
+        </ul>
+        
+        <img src="your-image.jpg" alt="Your Image" class="nav-image">
+        <div class="menu-toggle">
+        <input id="checkbox" type="checkbox" class="menu-btn">
+        <label class="toggle" for="checkbox">
+      
+          <div id="bar1" class="bars"></div>
+          <div id="bar2" class="bars"></div>
+          <div id="bar3" class="bars"></div>
+        
+        </label>
+        <div class="overlay-menu">
+          <div class="profile-image">
+            <img src="" alt="hello">
+          </div>
+          <div class="buttons-menu">
+            <a href="">
+            <button>
+              Tournaments
+            </button>
+            </a>
+            <a href="">
+            <button>
+              Learn
+            </button>
+            </a>
+            <a href="">
+            <button>
+              Battles
+            </button>
+            </a>
+          </div>
+      </div>
+    
+        </div>
+      </nav>
+    <div class="dashboard-body">
+        <div class="dashboard-left">
+            <button onclick="showSection('Going-on','go-btn')" class="dashboard-btns" id="go-btn">
+                Going on
+            </button>
+            <button onclick="showSection('upcoming','upcom-btn')" class="dashboard-btns" id="upcom-btn">
+                Upcoming
+            </button>
+            <button onclick="showSection('participated','part-btn')" class="dashboard-btns" id="part-btn">
+                participated
+            </button>
+        </div>
+        <div class="dashboard-right">
+            <div class="menu-dash-toggle">
+                <input id="checkbox-dash" type="checkbox" class="menu-dash-btn">
+                <label class="toggle-dash" for="checkbox-dash">
+              
+                  <div id="bar1-dash" class="bars"></div>
+                  <div id="bar2-dash" class="bars"></div>
+                  <div id="bar3-dash" class="bars"></div>
+                
+                </label>
+                <div class="overlay-dash-menu">
+                  <div class="buttons-dash-menu">
+                        <div class="dashboard-btns">
+                            <button onclick="showSection('Going-on','go-btn')" class="dashboard-btns" id="go-btn">
+                                Going on
+                            </button>
+                            <button onclick="showSection('upcoming','upcom-btn')" class="dashboard-btns" id="upcom-btn">
+                                Upcoming
+                            </button>
+                            <button onclick="showSection('participated','part-btn')" class="dashboard-btns" id="part-btn">
+                                Participated
+                            </button>
+                  </div></div>
+
+                  </div>
+              </div>
+            <div class="section" id="Going-on">
+                <div class="container">
+                    <div class="text-dash">
+                        Going on
+                    </div>
+                    <div class="line-dash"></div>
+                </div>
+                <div class="event-card-container">
+                <a href="" class="event-card-link">
+                <div class="event-card">
+                    <div class="event-card-left">
+                        <img src="image9.jpg" alt="" class="event-image" >
+                    </div>
+                    <div class="event-card-right">
+                        <p class="event-name">
+                            Name of the event
+                        </p>
+                        <p class="event-des">
+                            desc
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            </div>
+            <div class="section" id="upcoming">
+                <div class="container">
+                    <div class="text-dash">
+                        Upcoming
+                    </div>
+                    <div class="line-dash"></div>
+                </div>
+            </div>
+            <div class="section" id="participated">
+                <div class="container">
+                    <div class="text-dash">
+                        Participated
+                    </div>
+                    <div class="line-dash"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="left-section">
+            <img id = logo-foot src="clash of bugs s _white name9.png" alt="">
+
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tournaments</a></li>
+                <li><a href="#">Battles</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">feedback</a></li>
+            </ul>
+            <div class="copyright"><p> © by Trivix labs pvt ltd</p></div>
+        </div>
+        </div>
+        <div class="right-section">
+            <p>Contact Information:</p>
+            <p>Email: example@example.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            
+        </div>
+    </footer>
+    <script>
+        function showSection(sectionId, btnId){
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+            })
+
+            const buttns = document.querySelectorAll('.dashboard-btns');
+            buttns.forEach(buttn => {
+                buttn.classList.remove('selected-btns');
+            })
+            
+            const sectionToshow = document.getElementById(sectionId);
+            sectionToshow.classList.add('active-section')
+
+            const buttonToshow = document.getElementById(btnId);
+            buttonToshow.classList.add('selected-btns')
+
+            
+        }
+        showSection('Going-on', "go-btn");
+    </script>
+    <script src="navbar.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

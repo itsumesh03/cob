@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bahnschrift:wght@300&display=swap">
+    <style>
+        .player{
+            color: #BBBBBB;
+            font-family: Bahnschrift;
+            margin: 5%;
+        }
+    </style>
+
+</head>
+<div>
+
+        
+        <nav class="navbar">
+        <div class="logo"><a href="./homepage1.html" class="home-link"><img width="100px" id = logo src="clash of bugs s _white name9.png" alt=""></a>
+        </div>
+        <ul class="nav-list">
+          <li><a href=""><button href="#">Tournaments</button></a></li>
+          <li><a href=""><button href="#">Learn</button></a></li>
+          <li><a href=""><button href="#">Battles</button></a></li>
+        </ul>
+        
+        <img src="your-image.jpg" alt="Your Image" class="nav-image">
+        <div class="menu-toggle">
+        <input id="checkbox" type="checkbox" class="menu-btn">
+        <label class="toggle" for="checkbox">
+      
+          <div id="bar1" class="bars"></div>
+          <div id="bar2" class="bars"></div>
+          <div id="bar3" class="bars"></div>
+        
+        </label>
+        <div class="overlay-menu">
+          <div class="profile-image">
+            <img src="" alt="hello">
+          </div>
+          <div class="buttons-menu">
+            <a href="">
+            <button>
+              Tournaments
+            </button>
+            </a>
+            <a href="">
+            <button>
+              Learn
+            </button>
+            </a>
+            <a href="">
+            <button>
+              Battles
+            </button>
+            </a>
+          </div>
+      </div>
+    
+        </div>
+      </nav>
+<div class="background">
+    
+    <div class="dashboard-body">
+        <img class="bg-img" alt="" src="bg-img.svg">
+        <div class="dashboard-left">
+            <button onclick="showSection('Personal-info','PI-btn')" class="dashboard-btns" id="PI-btn">
+                Personal info
+            </button>
+            <button onclick="showSection('Certificates','cert-btn')" class="dashboard-btns" id="cert-btn">
+                Certificates
+            </button>
+            <button onclick="showSection('Ranking','rank-btn')" class="dashboard-btns" id="rank-btn">
+                Ranking
+            </button>
+            <button onclick="showSection('Achivements','ach-btn')" class="dashboard-btns" id="ach-btn">
+                Achivements
+            </button>
+            <button onclick="showSection('Settings','set-btn')" class="dashboard-btns" id="set-btn">
+                Settings
+            </button>
+            
+                <button id="logout">
+                    <a href="/logout" class="LOGUT"></a>
+                    logout ?
+                </button>
+           
+        </div>
+        <div class="dashboard-right">
+            <div class="menu-dash-toggle">
+                <input id="checkbox-dash" type="checkbox" class="menu-dash-btn">
+                <label class="toggle-dash" for="checkbox-dash">
+              
+                  <div id="bar1-dash" class="bars"></div>
+                  <div id="bar2-dash" class="bars"></div>
+                  <div id="bar3-dash" class="bars"></div>
+                
+                </label>
+                <div class="overlay-dash-menu">
+                  <div class="buttons-dash-menu">
+                    <div class="dashboard-btns">
+                    <button onclick="showSection('Personal-info','PI-btn')" class="dashboard-btn" id="PI-btn">
+                        Personal info
+                    </button>
+                    <button onclick="showSection('Certificates','cert-btn')" class="dashboard-btn" id="cert-btn">
+                        Certificates
+                    </button>
+                    <button onclick="showSection('Ranking','rank-btn')" class="dashboard-btn" id="rank-btn">
+                        Ranking
+                    </button>
+                    <button onclick="showSection('Achivements','ach-btn')" class="dashboard-btn" id="ach-btn">
+                        Achivements
+                    </button>
+                    <button onclick="showSection('Settings','set-btn')" class="dashboard-btn" id="set-btn">
+                        Settings
+                    </button>
+                </div>
+                <button id="logout">
+                    <a href="/logout" class="LOGUT"></a>
+                    logout ?
+                </button>
+                  </div>
+              </div>
+
+                </div>
+            <div class="section" id="Personal-info">
+                <div class="container">
+                    <div class="text-dash">
+                        Personal Info
+                    </div>
+                    <div class="line-dash"></div>
+                </div>
+                <div class="profile">
+                <div class="left-profile">
+                <form action="" class="image-from">
+                <img id="displayImage" src="brownz medal.svg" alt="" class="profile-image1">
+                <p class="uname">@username</p>
+                <div class="select-container">
+                <select id="imageSelector">
+                    <option value="image9.jpg">Image 1</option>
+                    <option value="image2.jpg">Image 2</option>
+                    <option value="image3.jpg">Image 3</option>
+                </select>
+                </div>
+                <br>
+                <input class="save-btn" type="submit" value="save">
+            
+                <script>
+                    // Get a reference to the dropdown menu and the display image element
+                    const imageSelector = document.getElementById('imageSelector');
+                    const displayImage = document.getElementById('displayImage');
+            
+                    // Function to update the displayed image based on the user's selection
+                    function updateImage() {
+                        const selectedValue = imageSelector.value;
+                        displayImage.src = selectedValue;
+                    }
+            
+                    // Add an event listener to the dropdown menu to call the updateImage function when the selection changes
+                    imageSelector.addEventListener('change', updateImage);
+                </script>
+            </form>
+                </div>
+                <div class="right-profile">
+                    <div class="progress-card-profile">
+                        <div class="bars-col">
+                            <div class="bars">
+                                <div class="bar-text">
+                                    Python
+                                </div>
+                                <div class="progress-bar-loader">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="bars">
+                                <div class="bar-text">
+                                    Mathematics
+                                </div>
+                                <div class="progress-bar-loader">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="bars">
+                                <div class="bar-text">
+                                    Data Structures
+                                </div>
+                                <div class="progress-bar-loader">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="bars">
+                                <div class="bar-text">
+                                    AI
+                                </div>
+                                <div class="progress-bar-loader">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="bars">
+                                <div class="bar-text">
+                                    C
+                                </div>
+                                <div class="progress-bar-loader">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="bars">
+                                <div class="bar-text">
+                                   C++
+                                </div>
+                                <div class="progress-bar-loader">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="bars">
+                                <div class="bar-text">
+                                    Java
+                                </div>
+                                <div class="progress-bar-loader">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                            <div class="bars">
+                                <div class="bar-text">
+                                    Algorithms
+                                </div>
+                                <div class="progress-bar-loader">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="section" id="Certificates">
+                <div class="container">
+                    <div class="text-dash">
+                        Certificates
+                    </div>
+                    <div class="line-dash"></div>
+                </div>
+                <div class="certificate-container">
+                    <div class="certificate-card">
+                        <img src="PROJECT NETWORK.png" alt="">
+                        <div class="certificate-side-content">
+                            <div class="cert-text" style="font-family: Bahnschrift;">
+                                Certificate in Python
+                            </div>
+                            <div class="button-view">
+                                <a href="" class="button-cert">view</a>
+                                
+                                <!-- dribbble -->
+                                <a class="dribbble" href="https://dribbble.com/shots/7441241-Button-Hover-Effects" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="Ranking">
+                <div class="container">
+                    <div class="text-dash">
+                        Ranking
+                    </div>
+                    <div class="line-dash"></div>
+                </div>
+            <div class="rank-ele">
+                <div class="upper-card">
+                    <img src="brownz medal.svg" alt="" class="medal">
+                    <div class="level-data">
+                        <div class="league-name level-text">
+                            Brownz 1
+                        </div>
+                        <div class="progress-loader">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="percentage">
+                            150/300 Trophies
+                        </div>
+                        <div class="level-no level-text">
+                            Level 1
+                        </div>
+                        <div class="progress-loader">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="percentage">
+                           50/100 XP
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text-dash">
+                        Logs
+                    </div>
+                    <div class="line-dash"></div>
+                </div>
+                <div class="log-container">
+                    
+                    <div class="log-sword-container">
+                   
+
+                    <div class="the-swords">
+                        <img src="swords (1).png" alt="">
+                    </div>
+
+                    <div class="log-card" style="font-family: Bahnschrift;">
+                        <div class="player-left-name">
+                            <div class="player">
+                                Jass6789
+                            </div>
+                            <div class="data-match" id="won">
+                                Won
+                            </div>
+                        </div>
+
+                        
+                        <div class="player-right-name">
+
+                            <div class="data-match"  id="lost">
+                                Lost
+                            <div class="player" id="player-lost">
+                                PlayerName6789
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            
+
+            <div class="section" id="Achivements">
+                <div class="container">
+                    <div class="text-dash">
+                        Achivements
+                    </div>
+                    <div class="line-dash"></div>
+                </div>
+                <div class="achive-parent">
+                    <div class="achived">
+                        <div class="container">
+                            <div class="text-dash" style="font-size: 30px;">
+                                Achived
+                            </div>
+                            <div class="line-dash"></div>
+                        </div>
+                        <div class="achived-card-grid">
+                            <div class="achived-card legendary" style="font-family: Bahnschrift;">
+                                The Title
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achive-in-progress">
+                        <div class="container">
+                            <div class="text-dash" style="font-size: 30px;">
+                                In-progress
+                            </div>
+                            <div class="line-dash"></div>
+                        </div>
+
+                        <div class="achivement-in-progress-grid">
+                            <div class="achivement-in-progress-card " style="font-family: Bahnschrift;">
+                                <div class="title-achivement rare">
+                                    The Title
+                                </div>
+                                <div class="task">
+                                    <!-- repeat here -->
+                                <div class="task-name">
+                                    Task 1
+                                </div>
+                                <div class="progress-loader">
+                                    <div class="progress"></div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="Settings">
+                <div class="container">
+                    <div class="text-dash">
+                        Settings
+                    </div>
+                     <div class="line-dash"></div>
+                </div>
+                <div class="setting-box">
+                    <div class="form-contain">
+                    <form action="" id="email" method="post" >
+                        <legend class="settings-text">E-mail Address</legend>
+                        <p class="setting-text">Old email</p>
+                        <input type="email" class="setting-inputs" placeholder="Enter the new Email">
+                        <input type="submit" class="setting-btn" >
+                    </form>
+                    <form action="" id="phone-number" method="post">
+                    <legend class="settings-text">Phone number</legend>
+                        <p class="setting-text">Old number</p>
+                        <input type="" class="setting-inputs" placeholder="Enter the new number">
+                        <input type="submit" class="setting-btn">
+                    </form>
+                    <form action="" id="passwords">
+                        <legend class="settings-text">Password</legend>
+                        <input type="password" placeholder="enter old password" class="setting-inputs">
+                        <input type="password" placeholder="enter new password" class="setting-inputs">
+                        <input type="password" placeholder="enter new password again" class="setting-inputs">
+                        <input type="submit" class="setting-btn">
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId, btnId){
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+            })
+
+            const buttns = document.querySelectorAll('.dashboard-btns');
+            buttns.forEach(buttn => {
+                buttn.classList.remove('selected-btns');
+            })
+            
+            const sectionToshow = document.getElementById(sectionId);
+            sectionToshow.classList.add('active-section')
+
+            const buttonToshow = document.getElementById(btnId);
+            buttonToshow.classList.add('selected-btns')
+
+            
+        }
+        showSection('Personal-info', "PI-btn");
+    </script>
+    <script>
+        document.querySelectorAll('.button-cert').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+    </script>
+    <script src="navbar.js"></script>
+    <script src="dashboard.js"></script>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="left-section">
+            <img id = logo-foot src="clash of bugs s _white name9.png" alt="">
+
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tournaments</a></li>
+                <li><a href="#">Battles</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">feedback</a></li>
+            </ul>
+            <div class="copyright"><p> © by Trivix labs pvt ltd</p></div>
+        </div>
+        </div>
+        <div class="right-section">
+            <p>Contact Information:</p>
+            <p>Email: example@example.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            
+        </div>
+    </footer>
+
+</body>
+</html>

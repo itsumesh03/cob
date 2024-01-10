@@ -1,0 +1,302 @@
+body{
+    background-color: black;
+}
+
+/* .desktop {
+    background-color: #1b2b3d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  } */
+
+  .desktop .main{
+    margin-left: 8%;
+    margin-top: 25px;
+  }
+  
+
+.desktop .nav {
+    position: fixed;
+    width: 8%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .desktop .overlap-group {
+    position: fixed;
+    width: 8%;
+    height: 100%;
+    border: 0.5px solid;
+    border-color: #02020291;
+    box-shadow: 0px 4px 10px 5px #1f355b;
+  }
+  
+  .desktop .menu {
+    position: fixed;
+    width: 6%;
+    height: 482px;
+    top: 151px;
+    left: 1%;
+    background-color: rgb(14, 23, 38);
+    border-radius: 40px;
+    /* box-shadow: 1px 2px 15px 30px #1b2b3d38; */
+    /* box-shadow: 1px 1px 8px 5px #162640 ; */
+  }
+
+  
+  .desktop .logo {
+    position: fixed;
+    width:6%;
+    height: 62px;
+    top: 25px;
+    left: 1%;
+  }
+  .top .profile {
+    position: absolute;
+    width: 3.5%;
+    height: 7%;
+    top: 2%;
+    right: 8%;
+    background-color: #d9d9d9;
+    border-radius: 24.5px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px 5px #0e1726;
+    border: 1px solid black;
+  }
+  
+  .top .rank {
+    position: absolute;
+    width: 8%;
+    height: 7%;
+    top: 2%;
+    right: 13%;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+  }
+
+  .radio-inputs {
+    margin-left: 8%;
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 50%;
+    height:10%;
+    font-size: 25px;
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+  }
+  
+
+  #main1{
+    margin-left: 8%;
+    margin-top: 10px;
+    height: 38.27rem;
+    width:83.5%;
+    /* background: blue; */
+    position: relative;
+    display:flex;
+    /* justify-content: end; */
+  }
+  #main2{
+    margin-left: 8%;
+    margin-top: 10px;
+    height: 38.27rem;
+    width:83.5%;
+    /* background: blue; */
+    position: relative;
+    display:flex;
+    /* justify-content: end; */
+    display: none;
+  }
+  #main3{
+    margin-left: 8%;
+    margin-top: 10px;
+    height: 38.27rem;
+    width:83.5%;
+    /* background: blue; */
+    position: relative;
+    display:flex;
+    display: none;
+    /* justify-content: end; */
+  }
+  
+  /* .main {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+   */
+
+
+  .main .overlap-group1 {
+    width: 35%;
+    left: 0;
+    background-color: #a3a2a2;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    overflow: auto;
+  }
+  .desktop .overlap-group1::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+}
+
+.desktop .overlap-group1::-webkit-scrollbar-thumb {
+    background-color:#4d4d4dac; /* Set the color of the thumb */
+    border-radius: 3px; /* Set the radius of the thumb corners */
+}
+
+.desktop .overlap-group1::-webkit-scrollbar-track {
+    background-color:#bbbdc0 ; 
+    border-radius: 3px; /* Set the radius of the track corners */
+}
+  
+  .main .rectangle {
+    width: 92%;
+    height: 35%;
+    left: 4%;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    position: relative;
+    /* top: 1.5%; */
+    margin-top:1.5%;
+    margin-bottom:1.5%;
+  }
+  
+  .main .overlap {
+    width: 65%;
+    left: 35%;
+    background-color: #ebeaea;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    overflow: auto;
+  }
+  
+  .main .rectangle-2 {
+    width: 98%;
+    height: 50%;
+    left: 1%;
+    background-color: #999696;
+    position: relative;
+    top: 1.5%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   
+  .tor h1{
+    color:white;
+    margin-left:5%;
+    font-size: 45px;
+  }
+.main .slider{
+    height:200px;
+    width:65%;
+    display: flex;
+    margin-left: 20%;
+}
+.slider1{
+    height:100%;
+    width:100%;
+    margin:3%;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
+

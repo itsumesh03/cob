@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Changer</title>
+</head>
+<body>
+    <h1>Image Changer</h1>
+
+    <!-- Dropdown menu -->
+    <label for="imageSelector">Select an image:</label>
+    <select id="imageSelector">
+        <option value="image1.jpg">Image 1</option>
+        <option value="image2.jpg">Image 2</option>
+        <option value="image3.jpg">Image 3</option>
+    </select>
+
+    <br>
+
+    <!-- Display area for the selected image -->
+    <img id="displayImage" src="image1.jpg" alt="Selected Image">
+
+    <script>
+        // Get a reference to the dropdown menu and the display image element
+        const imageSelector = document.getElementById('imageSelector');
+        const displayImage = document.getElementById('displayImage');
+
+        // Function to update the displayed image based on the user's selection
+        function updateImage() {
+            const selectedValue = imageSelector.value;
+            displayImage.src = selectedValue;
+        }
+
+        // Add an event listener to the dropdown menu to call the updateImage function when the selection changes
+        imageSelector.addEventListener('change', updateImage);
+    </script>
+</body>
+</html>
